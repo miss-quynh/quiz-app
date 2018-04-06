@@ -14,10 +14,64 @@
         android:paddingTop="16dp">
 
         <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:text="@string/quiz_title"
+            android:textSize="30sp"
+            android:textColor="#4689C8"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/score_header"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/current_score"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/current_score"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/question_header"
+                android:textSize="20sp"
+                android:layout_alignParentLeft="true"/>
+
+            <TextView
+                android:id="@+id/question"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="@string/current_question"
+                android:textSize="20sp"/>
+
+        </RelativeLayout>
+
+        <TextView
             android:id="@+id/question_1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="30dp"
             android:text="@string/question_1"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="#4689C8"

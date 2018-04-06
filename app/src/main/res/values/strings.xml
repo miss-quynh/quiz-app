@@ -3,6 +3,21 @@
     <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Quiz App</string>
 
+    <!-- Title of quiz. [CHAR LIMIT=20] -->
+    <string name="quiz_title">Google \'Google\'</string>
+
+    <!-- Score header. [CHAR LIMIT=20] -->
+    <string name="score_header">Score</string>
+
+    <!-- Current score tracker. [CHAR LIMIT=20] -->
+    <string name="current_score">0</string>
+
+    <!-- Score header. [CHAR LIMIT=20] -->
+    <string name="question_header">Question</string>
+
+    <!-- Current score tracker. [CHAR LIMIT=20] -->
+    <string name="current_question">1/10</string>
+
     <!-- Question #1 [CHAR LIMIT=NONE] -->
     <string name="question_1">Google was founded by whom?</string>
 
