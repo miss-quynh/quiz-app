@@ -45,33 +45,33 @@ public class QuestionLibrary {
     public String getQuestion(int a) {
         String question = questionsList[a];
         return question;
-    };
+    }
 
 
     public String getOption1(int a) {
         String option1 = optionsList[a][0];
         return option1;
-    };
+    }
 
 
     public String getOption2(int a) {
         String option2 = optionsList[a][1];
         return option2;
-    };
+    }
 
     public String getOption3(int a) {
         String option3 = optionsList[a][2];
         return option3;
-    };
+    }
 
     public String getOption4(int a) {
         String option4 = optionsList[a][3];
         return option4;
-    };
+    }
 
-    public String correctAnswersList(int a) {
+    public String getCorrectAnswer(int a) {
         String correctAnswer = correctAnswersList[a];
         return correctAnswer;
-    };
-    
+    }
+
 }

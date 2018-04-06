@@ -58,7 +58,7 @@
                 android:layout_alignParentLeft="true"/>
 
             <TextView
-                android:id="@+id/question"
+                android:id="@+id/current_question"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentRight="true"
@@ -68,10 +68,11 @@
         </RelativeLayout>
 
         <TextView
-            android:id="@+id/question_1"
+            android:id="@+id/question_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="30dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginBottom="20dp"
             android:text="@string/question_1"
             android:textAppearance="?android:textAppearanceLarge"
             android:textColor="#4689C8"
@@ -82,390 +83,390 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
             <RadioButton
-                android:id="@+id/question_1_option_1_radio_button"
+                android:id="@+id/option_1_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_option_1"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
-                android:id="@+id/question_1_option_2_radio_button"
+                android:id="@+id/option_2_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_option_2"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
-                android:id="@+id/question_1_option_3_radio_button"
+                android:id="@+id/option_3_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_option_3"
                 android:textAppearance="?android:textAppearanceMedium" />
             <RadioButton
-                android:id="@+id/question_1_option_4_radio_button"
+                android:id="@+id/option_4_radio_button"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/question_1_option_4"
                 android:textAppearance="?android:textAppearanceMedium" />
         </RadioGroup>
 
-        <TextView
-            android:id="@+id/question_2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/question_2"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#4689C8"
-            android:textStyle="bold" />
+        <!--<TextView-->
+            <!--android:id="@+id/question_2"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:text="@string/question_2"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:textColor="#4689C8"-->
+            <!--android:textStyle="bold" />-->
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/question_2_option_1_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_2_option_1"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_2_option_2_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_2_option_2"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_2_option_3_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_2_option_3"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_2_option_4_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_2_option_4"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </RadioGroup>
+        <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_2_option_1_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_2_option_1"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_2_option_2_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_2_option_2"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_2_option_3_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_2_option_3"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_2_option_4_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_2_option_4"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+        <!--</RadioGroup>-->
 
-        <TextView
-            android:id="@+id/question_3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/question_3"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#4689C8"
-            android:textStyle="bold" />
+        <!--<TextView-->
+            <!--android:id="@+id/question_3"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:text="@string/question_3"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:textColor="#4689C8"-->
+            <!--android:textStyle="bold" />-->
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/question_3_option_1_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_3_option_1"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_3_option_2_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_3_option_2"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_3_option_3_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_3_option_3"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_3_option_4_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_3_option_4"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </RadioGroup>
+        <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_3_option_1_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_3_option_1"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_3_option_2_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_3_option_2"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_3_option_3_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_3_option_3"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_3_option_4_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_3_option_4"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+        <!--</RadioGroup>-->
 
-        <TextView
-            android:id="@+id/question_4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/question_4"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#4689C8"
-            android:textStyle="bold" />
+        <!--<TextView-->
+            <!--android:id="@+id/question_4"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:text="@string/question_4"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:textColor="#4689C8"-->
+            <!--android:textStyle="bold" />-->
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/question_4_option_1_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_4_option_1"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_4_option_2_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_4_option_2"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_4_option_3_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_4_option_3"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_4_option_4_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_4_option_4"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </RadioGroup>
+        <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_4_option_1_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_4_option_1"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_4_option_2_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_4_option_2"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_4_option_3_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_4_option_3"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_4_option_4_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_4_option_4"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+        <!--</RadioGroup>-->
 
-        <TextView
-            android:id="@+id/question_5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/question_5"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#4689C8"
-            android:textStyle="bold" />
+        <!--<TextView-->
+            <!--android:id="@+id/question_5"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:text="@string/question_5"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:textColor="#4689C8"-->
+            <!--android:textStyle="bold" />-->
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/question_5_option_1_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_5_option_1"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_5_option_2_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_5_option_2"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_5_option_3_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_5_option_3"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_5_option_4_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_5_option_4"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </RadioGroup>
+        <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_5_option_1_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_5_option_1"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_5_option_2_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_5_option_2"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_5_option_3_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_5_option_3"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_5_option_4_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_5_option_4"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+        <!--</RadioGroup>-->
 
-        <TextView
-            android:id="@+id/question_6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/question_6"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#4689C8"
-            android:textStyle="bold" />
+        <!--<TextView-->
+            <!--android:id="@+id/question_6"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:text="@string/question_6"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:textColor="#4689C8"-->
+            <!--android:textStyle="bold" />-->
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/question_6_option_1_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_6_option_1"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_6_option_2_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_6_option_2"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_6_option_3_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_6_option_3"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_6_option_4_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_6_option_4"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </RadioGroup>
+        <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_6_option_1_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_6_option_1"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_6_option_2_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_6_option_2"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_6_option_3_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_6_option_3"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_6_option_4_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_6_option_4"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+        <!--</RadioGroup>-->
 
-        <TextView
-            android:id="@+id/question_7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/question_7"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#4689C8"
-            android:textStyle="bold" />
+        <!--<TextView-->
+            <!--android:id="@+id/question_7"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:text="@string/question_7"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:textColor="#4689C8"-->
+            <!--android:textStyle="bold" />-->
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/question_7_option_1_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_7_option_1"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_7_option_2_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_7_option_2"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_7_option_3_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_7_option_3"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_7_option_4_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_7_option_4"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </RadioGroup>
+        <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_7_option_1_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_7_option_1"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_7_option_2_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_7_option_2"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_7_option_3_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_7_option_3"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_7_option_4_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_7_option_4"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+        <!--</RadioGroup>-->
 
-        <TextView
-            android:id="@+id/question_8"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/question_8"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#4689C8"
-            android:textStyle="bold" />
+        <!--<TextView-->
+            <!--android:id="@+id/question_8"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:text="@string/question_8"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:textColor="#4689C8"-->
+            <!--android:textStyle="bold" />-->
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/question_8_option_1_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_8_option_1"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_8_option_2_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_8_option_2"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_8_option_3_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_8_option_3"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_8_option_4_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_8_option_4"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </RadioGroup>
+        <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_8_option_1_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_8_option_1"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_8_option_2_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_8_option_2"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_8_option_3_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_8_option_3"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_8_option_4_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_8_option_4"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+        <!--</RadioGroup>-->
 
-        <TextView
-            android:id="@+id/question_9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/question_9"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#4689C8"
-            android:textStyle="bold" />
+        <!--<TextView-->
+            <!--android:id="@+id/question_9"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:text="@string/question_9"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:textColor="#4689C8"-->
+            <!--android:textStyle="bold" />-->
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/question_9_option_1_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_9_option_1"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_9_option_2_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_9_option_2"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_9_option_3_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_9_option_3"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_9_option_4_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_9_option_4"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </RadioGroup>
+        <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_9_option_1_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_9_option_1"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_9_option_2_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_9_option_2"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_9_option_3_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_9_option_3"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_9_option_4_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_9_option_4"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+        <!--</RadioGroup>-->
 
-        <TextView
-            android:id="@+id/question_10"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
-            android:text="@string/question_10"
-            android:textAppearance="?android:textAppearanceLarge"
-            android:textColor="#4689C8"
-            android:textStyle="bold" />
+        <!--<TextView-->
+            <!--android:id="@+id/question_10"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginTop="16dp"-->
+            <!--android:text="@string/question_10"-->
+            <!--android:textAppearance="?android:textAppearanceLarge"-->
+            <!--android:textColor="#4689C8"-->
+            <!--android:textStyle="bold" />-->
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <RadioButton
-                android:id="@+id/question_10_option_1_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_10_option_1"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_10_option_2_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_10_option_2"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_10_option_3_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_10_option_3"
-                android:textAppearance="?android:textAppearanceMedium" />
-            <RadioButton
-                android:id="@+id/question_10_option_4_radio_button"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/question_10_option_4"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </RadioGroup>
+        <!--<RadioGroup-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:orientation="vertical">-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_10_option_1_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_10_option_1"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_10_option_2_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_10_option_2"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_10_option_3_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_10_option_3"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+            <!--<RadioButton-->
+                <!--android:id="@+id/question_10_option_4_radio_button"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="@string/question_10_option_4"-->
+                <!--android:textAppearance="?android:textAppearanceMedium" />-->
+        <!--</RadioGroup>-->
 
     </LinearLayout>
 
