@@ -2,9 +2,11 @@ package com.example.android.quizapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.text.Editable;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
+import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -28,21 +30,21 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        scoreTracker = (TextView)findViewById(R.id.current_score);
-        questionTracker = (TextView)findViewById(R.id.current_question);
-        questionView = (TextView)findViewById(R.id.question_text_view);
-        multipleChoice1 = (RadioButton)findViewById(R.id.option_1_radio_button);
-        multipleChoice2 = (RadioButton)findViewById(R.id.option_2_radio_button);
-        multipleChoice3 = (RadioButton)findViewById(R.id.option_3_radio_button);
-        multipleChoice4 = (RadioButton)findViewById(R.id.option_4_radio_button);
+        scoreTracker = (TextView) findViewById(R.id.current_score);
+        questionTracker = (TextView) findViewById(R.id.current_question);
+        questionView = (TextView) findViewById(R.id.question_text_view);
+        multipleChoice1 = (RadioButton) findViewById(R.id.option_1_radio_button);
+        multipleChoice2 = (RadioButton) findViewById(R.id.option_2_radio_button);
+        multipleChoice3 = (RadioButton) findViewById(R.id.option_3_radio_button);
+        multipleChoice4 = (RadioButton) findViewById(R.id.option_4_radio_button);
 
         updateQuestion();
 
-        multipleChoice1.setOnClickListener(new View.OnClickListener(){
+        multipleChoice1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
 
-                if (multipleChoice1.getText() == correctAnswer){
+                if (multipleChoice1.getText() == correctAnswer) {
                     currentScore += 1;
                     updateScore(currentScore);
                     updateQuestionNumber(currentQuestion);
@@ -50,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(MainActivity.this, "Correct", Toast.LENGTH_SHORT).show();
 
-                }else {
+                } else {
                     Toast.makeText(MainActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
                     updateQuestionNumber(currentQuestion);
                     updateQuestion();
@@ -58,11 +60,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        multipleChoice2.setOnClickListener(new View.OnClickListener(){
+        multipleChoice2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
 
-                if (multipleChoice2.getText() == correctAnswer){
+                if (multipleChoice2.getText() == correctAnswer) {
                     currentScore += 1;
                     updateScore(currentScore);
                     updateQuestionNumber(currentQuestion);
@@ -70,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(MainActivity.this, "Correct", Toast.LENGTH_SHORT).show();
 
-                }else {
+                } else {
                     Toast.makeText(MainActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
                     updateQuestionNumber(currentQuestion);
                     updateQuestion();
@@ -78,11 +80,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        multipleChoice3.setOnClickListener(new View.OnClickListener(){
+        multipleChoice3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
 
-                if (multipleChoice3.getText() == correctAnswer){
+                if (multipleChoice3.getText() == correctAnswer) {
                     currentScore += 1;
                     updateScore(currentScore);
                     updateQuestionNumber(currentQuestion);
@@ -90,7 +92,7 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(MainActivity.this, "Correct", Toast.LENGTH_SHORT).show();
 
-                }else {
+                } else {
                     Toast.makeText(MainActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
                     updateQuestionNumber(currentQuestion);
                     updateQuestion();
@@ -98,11 +100,11 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        multipleChoice4.setOnClickListener(new View.OnClickListener(){
+        multipleChoice4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view){
+            public void onClick(View view) {
 
-                if (multipleChoice4.getText() == correctAnswer){
+                if (multipleChoice4.getText() == correctAnswer) {
                     currentScore += 1;
                     updateScore(currentScore);
                     updateQuestionNumber(currentQuestion);
@@ -110,13 +112,14 @@ public class MainActivity extends AppCompatActivity {
 
                     Toast.makeText(MainActivity.this, "Correct", Toast.LENGTH_SHORT).show();
 
-                }else {
+                } else {
                     Toast.makeText(MainActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
                     updateQuestionNumber(currentQuestion);
                     updateQuestion();
                 }
             }
         });
+
     }
 
     /**
@@ -130,7 +133,7 @@ public class MainActivity extends AppCompatActivity {
         multipleChoice4.setText(questionLibrary.getOption4(currentQuestion));
 
         correctAnswer = questionLibrary.getCorrectAnswer(currentQuestion);
-        currentQuestion++;
+        currentQuestion += 1;
     }
 
     /**

@@ -6,6 +6,9 @@
     <!-- Title of quiz. [CHAR LIMIT=20] -->
     <string name="quiz_title">Google \'Google\'</string>
 
+    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
+    <string name="name">Name</string>
+
     <!-- Score header. [CHAR LIMIT=20] -->
     <string name="score_header">Score</string>
 

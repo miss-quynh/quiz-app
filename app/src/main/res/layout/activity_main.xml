@@ -18,10 +18,18 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
             android:text="@string/quiz_title"
-            android:textSize="30sp"
+            android:textSize="35sp"
             android:textColor="#4689C8"
             android:textStyle="bold"
             android:gravity="center"/>
+
+        <EditText
+            android:id="@+id/name_field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/name"
+            android:inputType="text" />
 
         <RelativeLayout
             android:layout_width="match_parent"
