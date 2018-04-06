@@ -1,3 +1,156 @@
-<resources>
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+
+    <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Quiz App</string>
+
+    <!-- Question #1 [CHAR LIMIT=NONE] -->
+    <string name="question_1">Google was founded by whom?</string>
+
+    <!-- Question #1 Option #1 [CHAR LIMIT=NONE] -->
+    <string name="question_1_option_1">Steve Jobs and Tim Cook</string>
+
+    <!-- Question #1 Option #2 [CHAR LIMIT=NONE] -->
+    <string name="question_1_option_2">Larry Page and Sergey Brin</string>
+
+    <!-- Question #1 Option #3 [CHAR LIMIT=NONE] -->
+    <string name="question_1_option_3">Andy Rubin and Rich Miner</string>
+
+    <!-- Question #1 Option #4 [CHAR LIMIT=NONE] -->
+    <string name="question_1_option_4">Amir Shinar and Uri Levine</string>
+
+    <!-- Question #2 [CHAR LIMIT=NONE] -->
+    <string name="question_2">When was Google founded?</string>
+
+    <!-- Question #2 Option #1 [CHAR LIMIT=NONE] -->
+    <string name="question_2_option_1">September 1, 1998</string>
+
+    <!-- Question #2 Option #2 [CHAR LIMIT=NONE] -->
+    <string name="question_2_option_2">September 2, 1998</string>
+
+    <!-- Question #2 Option #3 [CHAR LIMIT=NONE] -->
+    <string name="question_2_option_3">September 3, 1998</string>
+
+    <!-- Question #2 Option #4 [CHAR LIMIT=NONE] -->
+    <string name="question_2_option_4">September 4, 1998</string>
+
+    <!-- Question #3 [CHAR LIMIT=NONE] -->
+    <string name="question_3">Which term was Google derived from?</string>
+
+    <!-- Question #3 Option #1 [CHAR LIMIT=NONE] -->
+    <string name="question_3_option_1">googol</string>
+
+    <!-- Question #3 Option #2 [CHAR LIMIT=NONE] -->
+    <string name="question_3_option_2">gooogle</string>
+
+    <!-- Question #3 Option #3 [CHAR LIMIT=NONE] -->
+    <string name="question_3_option_3">googel</string>
+
+    <!-- Question #3 Option #4 [CHAR LIMIT=NONE] -->
+    <string name="question_3_option_4">gogle</string>
+
+    <!-- Question #4 [CHAR LIMIT=NONE] -->
+    <string name="question_4">What was the original name of Google?</string>
+
+    <!-- Question #4 Option #1 [CHAR LIMIT=NONE] -->
+    <string name="question_4_option_1">Yahoo</string>
+
+    <!-- Question #4 Option #2 [CHAR LIMIT=NONE] -->
+    <string name="question_4_option_2">Backrub</string>
+
+    <!-- Question #4 Option #3 [CHAR LIMIT=NONE] -->
+    <string name="question_4_option_3">Bing</string>
+
+    <!-- Question #4 Option #4 [CHAR LIMIT=NONE] -->
+    <string name="question_4_option_4">Ask</string>
+
+    <!-- Question #5 [CHAR LIMIT=NONE] -->
+    <string name="question_5">Why are there goats on the lawns at the Mountain View HQ?</string>
+
+    <!-- Question #5 Option #1 [CHAR LIMIT=NONE] -->
+    <string name="question_5_option_1">To entertain visitors during open house</string>
+
+    <!-- Question #5 Option #2 [CHAR LIMIT=NONE] -->
+    <string name="question_5_option_2">To provide fresh milk to the employees</string>
+
+    <!-- Question #5 Option #3 [CHAR LIMIT=NONE] -->
+    <string name="question_5_option_3">To keep employees calm and focus</string>
+
+    <!-- Question #5 Option #4 [CHAR LIMIT=NONE] -->
+    <string name="question_5_option_4">To mow the lawns as part of Google\'s green initiative</string>
+
+    <!-- Question #6 [CHAR LIMIT=NONE] -->
+    <string name="question_6">What was the first ever Google Doodle?</string>
+
+    <!-- Question #6 Option #1 [CHAR LIMIT=NONE] -->
+    <string name="question_6_option_1">Fall Equinox</string>
+
+    <!-- Question #6 Option #2 [CHAR LIMIT=NONE] -->
+    <string name="question_6_option_2">Burning Man stick figure</string>
+
+    <!-- Question #6 Option #3 [CHAR LIMIT=NONE] -->
+    <string name="question_6_option_3">Pac-Man</string>
+
+    <!-- Question #6 Option #4 [CHAR LIMIT=NONE] -->
+    <string name="question_6_option_4">Claude Monet</string>
+
+    <!-- Question #7 [CHAR LIMIT=NONE] -->
+    <string name="question_7">The original Google computer storage was built with what?</string>
+
+    <!-- Question #7 Option #1 [CHAR LIMIT=NONE] -->
+    <string name="question_7_option_1">Legos</string>
+
+    <!-- Question #7 Option #2 [CHAR LIMIT=NONE] -->
+    <string name="question_7_option_2">Nanoblocks</string>
+
+    <!-- Question #7 Option #3 [CHAR LIMIT=NONE] -->
+    <string name="question_7_option_3">Duplo</string>
+
+    <!-- Question #7 Option #4 [CHAR LIMIT=NONE] -->
+    <string name="question_7_option_4">Minecraft</string>
+
+    <!-- Question #8 [CHAR LIMIT=NONE] -->
+    <string name="question_8">When was \'Google\' added as a verb in the Oxford English Dictionary?</string>
+
+    <!-- Question #8 Option #1 [CHAR LIMIT=NONE] -->
+    <string name="question_8_option_1">February 2000</string>
+
+    <!-- Question #8 Option #2 [CHAR LIMIT=NONE] -->
+    <string name="question_8_option_2">August 2002</string>
+
+    <!-- Question #8 Option #3 [CHAR LIMIT=NONE] -->
+    <string name="question_8_option_3">April 2004</string>
+
+    <!-- Question #8 Option #4 [CHAR LIMIT=NONE] -->
+    <string name="question_8_option_4">June 2006</string>
+
+    <!-- Question #9 [CHAR LIMIT=NONE] -->
+    <string name="question_9">What is the nickname of Google\'s new employees?</string>
+
+    <!-- Question #9 Option #1 [CHAR LIMIT=NONE] -->
+    <string name="question_9_option_1">Nooglers</string>
+
+    <!-- Question #9 Option #2 [CHAR LIMIT=NONE] -->
+    <string name="question_9_option_2">Googlers</string>
+
+    <!-- Question #9 Option #3 [CHAR LIMIT=NONE] -->
+    <string name="question_9_option_3">Backrubbers</string>
+
+    <!-- Question #9 Option #4 [CHAR LIMIT=NONE] -->
+    <string name="question_9_option_4">Freshmen</string>
+
+    <!-- Question #10 [CHAR LIMIT=NONE] -->
+    <string name="question_10">What is the unofficial slogan of Google?</string>
+
+    <!-- Question #10 Option #1 [CHAR LIMIT=NONE] -->
+    <string name="question_10_option_1">\'Do the right thing\'</string>
+
+    <!-- Question #10 Option #2 [CHAR LIMIT=NONE] -->
+    <string name="question_10_option_2">\'You can make money without doing evil\'</string>
+
+    <!-- Question #10 Option #3 [CHAR LIMIT=NONE] -->
+    <string name="question_10_option_3">\'Don\'t be evil\'</string>
+
+    <!-- Question #10 Option #4 [CHAR LIMIT=NONE] -->
+    <string name="question_10_option_4">\'Think different\'</string>
+
 </resources>
