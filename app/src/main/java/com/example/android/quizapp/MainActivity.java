@@ -2,11 +2,9 @@ package com.example.android.quizapp;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.text.Editable;
 import android.view.View;
 import android.widget.RadioButton;
 import android.widget.TextView;
-import android.widget.EditText;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
@@ -23,7 +21,7 @@ public class MainActivity extends AppCompatActivity {
 
     private String correctAnswer;
     private int currentScore = 0;
-    private int currentQuestion = 0;
+    private int currentQuestion = 1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -120,6 +118,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        notifyEndOfQuiz();
+
     }
 
     /**
@@ -152,6 +152,16 @@ public class MainActivity extends AppCompatActivity {
      * @param number from answering the question correctly
      */
     private void updateQuestionNumber(int number) {
-        questionTracker.setText("" + currentQuestion + "/10");
+        questionTracker.setText("" + currentQuestion + " / 10");
     }
+
+    /**
+     * This notifies user when the test is over.
+     */
+    private void notifyEndOfQuiz() {
+        if (currentQuestion == questionLibrary.getLength()) {
+            Toast.makeText(MainActivity.this, "Test is over", Toast.LENGTH_LONG).show();
+        }
+    }
+
 }

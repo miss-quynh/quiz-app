@@ -7,6 +7,7 @@ package com.example.android.quizapp;
 public class QuestionLibrary {
 
     private String questionsList [] = {
+            "Filler",
             "Google was founded by whom?",
             "When was Google founded?",
             "Which term was Google derived from?",
@@ -20,6 +21,7 @@ public class QuestionLibrary {
     };
 
     private String optionsList [][] = {
+            {"Filler", "Filler", "Filler", "Filler"},
             {"Steve Jobs and Tim Cook", "Larry Page and Sergey Brin", "Andy Rubin and Rich Miner", "Amir Shinar and Uri Levine"},
             {"September 1, 1998", "September 2, 1998", "September 3, 1998", "September 4, 1998"},
             {"googol", "gooogle", "googel", "gogle"},
@@ -33,6 +35,7 @@ public class QuestionLibrary {
     };
 
     private String correctAnswersList [] = {
+            "Filler",
             "Larry Page and Sergey Brin",
             "September 4, 1998",
             "googol",
@@ -75,6 +78,11 @@ public class QuestionLibrary {
     public String getCorrectAnswer(int a) {
         String correctAnswer = correctAnswersList[a];
         return correctAnswer;
+    }
+
+    public int getLength() {
+        int allQuestions = questionsList.length - 1;
+        return allQuestions;
     }
 
 }

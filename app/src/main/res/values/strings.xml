@@ -6,9 +6,6 @@
     <!-- Title of quiz. [CHAR LIMIT=20] -->
     <string name="quiz_title">Google \'Google\'</string>
 
-    <!-- Hint text display in the empty field for the user's name [CHAR LIMIT=20] -->
-    <string name="name">Name</string>
-
     <!-- Score header. [CHAR LIMIT=20] -->
     <string name="score_header">Score</string>
 
@@ -19,7 +16,7 @@
     <string name="question_header">Question</string>
 
     <!-- Current score tracker. [CHAR LIMIT=20] -->
-    <string name="current_question">1/10</string>
+    <string name="current_question">1 / 10</string>
 
     <!-- Question #1 [CHAR LIMIT=NONE] -->
     <string name="question_1">Google was founded by whom?</string>
@@ -35,11 +32,5 @@
 
     <!-- Question #1 Option #4 [CHAR LIMIT=NONE] -->
     <string name="question_1_option_4">Amir Shinar and Uri Levine</string>
-
-    <!-- Result header [CHAR LIMIT=20] -->
-    <string name="result_header">Result</string>
-
-    <!-- Total score display. [CHAR LIMIT=20] -->
-    <string name="total_score">1/10</string>
 
 </resources>
