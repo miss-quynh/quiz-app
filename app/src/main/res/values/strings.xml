@@ -4,7 +4,7 @@
     <string name="app_name">Quiz App</string>
 
     <!-- Title of quiz. [CHAR LIMIT=20] -->
-    <string name="quiz_title">Google \'Google\'</string>
+    <string name="quiz_title">Google</string>
 
     <!-- Score header. [CHAR LIMIT=20] -->
     <string name="score_header">Score</string>
