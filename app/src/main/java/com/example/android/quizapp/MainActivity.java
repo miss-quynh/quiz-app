@@ -3,6 +3,7 @@ package com.example.android.quizapp;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -38,88 +39,42 @@ public class MainActivity extends AppCompatActivity {
 
         updateQuestion();
 
-        multipleChoice1.setOnClickListener(new View.OnClickListener() {
-            @Override
+        View.OnClickListener clickListener = new View.OnClickListener() {
             public void onClick(View view) {
+                if (currentQuestion > questionLibrary.getLength()) {
+                    Toast.makeText(MainActivity.this, "PLEASE STOP CLICKING!", Toast.LENGTH_SHORT).show();
+                } else  {
+                    Button b = (Button) view;
+                    String toastMessage = "Wrong";
+                    int toastLength = Toast.LENGTH_SHORT;
+                    if (b.getText() == correctAnswer) {
+                        currentScore += 1;
+                        updateScore();
 
-                if (multipleChoice1.getText() == correctAnswer) {
-                    currentScore += 1;
-                    updateScore(currentScore);
-                    updateQuestionNumber(currentQuestion);
-                    updateQuestion();
+                        toastMessage = "Correct";
 
-                    Toast.makeText(MainActivity.this, "Correct", Toast.LENGTH_SHORT).show();
+                    }
+                    
+                    currentQuestion ++;
 
-                } else {
-                    Toast.makeText(MainActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
-                    updateQuestionNumber(currentQuestion);
-                    updateQuestion();
+                    if (currentQuestion >= questionLibrary.getLength()) {
+                        toastMessage += "\nTest is over";
+                        toastLength = Toast.LENGTH_LONG;
+                    } else {
+                        updateQuestionNumber();
+                        updateQuestion();
+                    }
+
+                    Toast.makeText(MainActivity.this, toastMessage, toastLength).show();
+
                 }
             }
-        });
+        };
 
-        multipleChoice2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (multipleChoice2.getText() == correctAnswer) {
-                    currentScore += 1;
-                    updateScore(currentScore);
-                    updateQuestionNumber(currentQuestion);
-                    updateQuestion();
-
-                    Toast.makeText(MainActivity.this, "Correct", Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(MainActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
-                    updateQuestionNumber(currentQuestion);
-                    updateQuestion();
-                }
-            }
-        });
-
-        multipleChoice3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (multipleChoice3.getText() == correctAnswer) {
-                    currentScore += 1;
-                    updateScore(currentScore);
-                    updateQuestionNumber(currentQuestion);
-                    updateQuestion();
-
-                    Toast.makeText(MainActivity.this, "Correct", Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(MainActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
-                    updateQuestionNumber(currentQuestion);
-                    updateQuestion();
-                }
-            }
-        });
-
-        multipleChoice4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-                if (multipleChoice4.getText() == correctAnswer) {
-                    currentScore += 1;
-                    updateScore(currentScore);
-                    updateQuestionNumber(currentQuestion);
-                    updateQuestion();
-
-                    Toast.makeText(MainActivity.this, "Correct", Toast.LENGTH_SHORT).show();
-
-                } else {
-                    Toast.makeText(MainActivity.this, "Wrong", Toast.LENGTH_SHORT).show();
-                    updateQuestionNumber(currentQuestion);
-                    updateQuestion();
-                }
-            }
-        });
-
-        notifyEndOfQuiz();
-
+        multipleChoice1.setOnClickListener(clickListener);
+        multipleChoice2.setOnClickListener(clickListener);
+        multipleChoice3.setOnClickListener(clickListener);
+        multipleChoice4.setOnClickListener(clickListener);
     }
 
     /**
@@ -133,35 +88,38 @@ public class MainActivity extends AppCompatActivity {
         multipleChoice4.setText(questionLibrary.getOption4(currentQuestion));
 
         correctAnswer = questionLibrary.getCorrectAnswer(currentQuestion);
-        currentQuestion += 1;
     }
 
     /**
      * This method updates the current score on the screen.
-     *
-     * @param point from answering the question correctly
      */
-    private void updateScore(int point) {
+    private void updateScore() {
         scoreTracker.setText("" + currentScore);
-
     }
 
     /**
      * This method updates the current question number on the screen.
-     *
-     * @param number from answering the question correctly
      */
-    private void updateQuestionNumber(int number) {
+    private void updateQuestionNumber() {
         questionTracker.setText("" + currentQuestion + " / 10");
     }
 
-    /**
-     * This notifies user when the test is over.
-     */
-    private void notifyEndOfQuiz() {
-        if (currentQuestion == questionLibrary.getLength()) {
-            Toast.makeText(MainActivity.this, "Test is over", Toast.LENGTH_LONG).show();
-        }
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("currentScore", currentScore);
+        outState.putInt("currentQuestionNumber", currentQuestion);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        super.onRestoreInstanceState(savedInstanceState);
+        currentScore = savedInstanceState.getInt("currentScore");
+        currentQuestion = savedInstanceState.getInt("currentQuestionNumber");
+
+        updateScore();
+        updateQuestionNumber();
+        updateQuestion();
     }
 
 }
